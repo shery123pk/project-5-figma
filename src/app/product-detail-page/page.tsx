@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, Search, ShoppingCart, User } from 'lucide-react'
 import Cards from "@/components/cards"
+import Link from "next/link"
 
 
 
@@ -19,13 +20,13 @@ export default function Product() {
 
       {/* Header */}
       <header className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <h1 className="text-[30px] font-bold"><a href="/">SHOP.CO</a>
+        <h1 className="text-[30px] font-bold"><Link href="/">SHOP.CO</Link>
           </h1>
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#" className="text-sm">Shop</a>
-          <a href="#" className="text-sm">On Sale</a>
-          <a href="#" className="text-sm">New Arrivals</a>
-          <a href="#" className="text-sm">Brands</a>
+          <Link href="#" className="text-sm">Shop</Link>
+          < Link href="#" className="text-sm">On Sale</Link>
+          < Link href="#" className="text-sm">New Arrivals</Link>
+          < Link href="#" className="text-sm">Brands</Link>
         </nav>
         <div className="flex items-center space-x-4">
           <div className="relative hidden md:flex items-center">
